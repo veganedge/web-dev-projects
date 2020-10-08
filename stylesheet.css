@@ -66,7 +66,7 @@ h1 {
 .works-section {
   text-align: center;
   background: #536386;
-  padding: 2rem;
+  padding: 10rem 2rem;
 }
 
 .works-section > h2::before { 
@@ -84,6 +84,33 @@ h1 {
   border-bottom: solid 3px #C8AB74;
 }
 
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 3rem auto;
+  margin-bottom: 6rem;
+}
+
+.project-tile {
+  
+}
+
+.project-image {
+   height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-name {
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  background: rgba(41,62,105,1)
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -92,7 +119,7 @@ h1 {
   text-align: center;
   width: 100%;
   background: #000;
-  padding: 2rem;
+  padding: 10rem 2rem;
 }
 
 .contact-section-header {
@@ -121,29 +148,32 @@ h1 {
   flex-wrap: wrap;
   }
 
-.contact-list > a {
-  text-align: center;
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 0rem 3rem;
+  width: 40px;
+  height: auto;
 }
 
-.block {
-  display: inline-block;
-  border-radius: 2px;
-  padding: 1rem 2rem;
+a img {
+  width: 40px;
 }
 
 .profile-link {
-  width: 40px;
-  height: auto;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
   margin: 1.5rem;
 }
 
 .profile-link:hover {
-  transform: translateY(15px);
+  transform: translateY(-15px);
 }
 
 .icon {
+  display: block;
   text-align: center;
 }
