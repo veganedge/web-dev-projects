@@ -81,7 +81,7 @@ h1 {
 .works-section-header {
   color: #C8AB74;
   font-size: 4rem;
-  border-bottom: solid 3px #C8AB74;
+  border-bottom: solid 0.2rem #C8AB74;
 }
 
 /* "Automagic" image grid using no media queries */
@@ -95,13 +95,18 @@ h1 {
   margin-bottom: 6rem;
 }
 
+.project {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
 .project-tile {
   
 }
 
 .project-image {
    height: calc(100% - 6.8rem);
-  width: 100%;
+  width: auto;
   object-fit: cover;
 }
 
