@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 
 /* NAVBAR */
 
