@@ -117,8 +117,8 @@ h1 {
 }
 
 .project-image {
-  height: 60%;
-  width: 60%;
+  height: 75%;
+  width: 75%;
   object-fit: cover;
 }
 
