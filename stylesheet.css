@@ -124,6 +124,7 @@ h1 {
 
 .container {
   margin-top: 0;
+  padding: 0;
 }
 
 .project-name {
