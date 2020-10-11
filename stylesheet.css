@@ -119,6 +119,11 @@ h1 {
 
 .project-image {
   width: 100%;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top: 0;
 }
 
 .project-name {
