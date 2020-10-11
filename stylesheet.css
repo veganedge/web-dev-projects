@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 /* NAVBAR */
 
 .nav {
@@ -78,11 +71,11 @@ h1 {
 
 /* PROJECTS SECTION */
 
-.projects-section {
+#projects-section {
   text-align: center;
   background: #536386;
-  padding: 10rem 2rem;
-}
+  height: 100vh;
+  }
 
 .projects-section > h2::before { 
   display: block; 
@@ -98,49 +91,40 @@ h1 {
   font-size: 4rem;
   border-bottom: solid 0.2rem #C8AB74;
 }
+.row {
+  background: #536386;
+}
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 33.0%;
+  padding: 4rem 2px;
+  background: #536386;
 }
 
-.tile {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  background: #536386;
 }
 
+/*
 .column::after {
   content: "";
   clear: both;
   display: table;
 }
-
-/* "Automagic" image grid using no media queries 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 3rem auto;
-  margin-bottom: 6rem;
-}
 */
-
-/*.project-tile {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
 
 .project-image {
-  height: 60%;
-  width: 60%;
-  object-fit: cover;
+  width: 100%;
 }
-*/
+
 .project-name {
   font-size: 2rem;
   padding: 1rem 0.5rem;
-  background: rgba(41,62,105,1)
+  background: rgba(41,62,105,1);
 }
 
 
@@ -152,6 +136,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100vh;
   width: 100%;
   background: #000;
   padding: 10rem 2rem;
