@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin-left: 0;
 }
 
 /* NAVBAR */
@@ -16,6 +15,12 @@ body {
   background: linear-gradient(324deg, rgba(41,62,105,1) 62%, rgba(158,121,50,1) 100%);
   border-bottom: solid 1px black;
   z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list a {
+    width: 100%
+  }
 }
 
 ul {
@@ -52,8 +57,9 @@ a {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000;
+/*  padding-bottom: 4rem; */
 }
 
 .welcome-section > p {
@@ -91,6 +97,7 @@ h1 {
   font-size: 4rem;
   border-bottom: solid 0.2rem #C8AB74;
 }
+
 .row {
   background: #536386;
 }
@@ -102,7 +109,7 @@ h1 {
   background: #536386;
 }
 
-.card {
+.project-tile {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   margin-bottom: 2rem;
@@ -142,7 +149,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background: #000;
 }
