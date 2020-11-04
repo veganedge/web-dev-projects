@@ -5,6 +5,9 @@ body {
 
 /* NAVBAR */
 
+/* FOR MOBILE need to enlarge nav links - maybe take up full bar left to right */
+
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -52,6 +55,9 @@ a {
 
 /* WELCOME SECTION */
 
+/* FOR MOBILE - enlarge headings */
+
+
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -76,6 +82,9 @@ h1 {
 
 
 /* PROJECTS SECTION */
+
+/* FOR MOBILE - need to list projects in column and enlarge */
+
 
 #projects-section {
   text-align: center;
@@ -143,6 +152,9 @@ h1 {
 
 
 /* CONTACT SECTION */
+
+/* FOR MOBILE - need to make links in one column and enlarge -enlarge headings too */
+
 
 .contact-section {
   display: flex;
